@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={\(\displaystyle \mathrm{EVOU} := \WE \WV \WO\WU \) (weighted by sequence count)\\
+\(\displaystyle (\mathrm{EVOU} - \mathrm{EVOU}\mathrm{.diag}()[:,\mathrm{None}])\mathrm{.max}(\mathrm{dim}=-1)\) (excluding diagonal)\\
+\(\displaystyle \bar{x}\pm\sigma\): \(\displaystyle -9.8 \pm 1.8\); range: \(\displaystyle 0 \pm 12\)},
+x grid style={darkgray176},
+xlabel={logit - diag},
+xmin=-13.4292470932007, xmax=13.8210432052612,
+xtick style={color=black},
+xtick={-15,-10,-5,0,5,10,15},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}15}\),
+  \(\displaystyle {\ensuremath{-}10}\),
+  \(\displaystyle {\ensuremath{-}5}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\)
+},
+y grid style={darkgray176},
+ylabel={count \ensuremath{\times} \# sequences with given max},
+ymin=0, ymax=7354417.35,
+ytick style={color=black},
+ytick={0,1000000,2000000,3000000,4000000,5000000,6000000,7000000,8000000},
+yticklabels={
+  \(\displaystyle {0}\),
+  \(\displaystyle {1}\),
+  \(\displaystyle {2}\),
+  \(\displaystyle {3}\),
+  \(\displaystyle {4}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {6}\),
+  \(\displaystyle {7}\),
+  \(\displaystyle {8}\)
+}
+]
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-12.1905975341797,0) rectangle (axis cs:-10.7333627588609,3877201);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-10.7333627588609,0) rectangle (axis cs:-9.27612798354205,7004207);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-9.27612798354205,0) rectangle (axis cs:-7.81889320822323,4928194);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-7.81889320822323,0) rectangle (axis cs:-6.36165843290441,874512);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-6.36165843290441,0) rectangle (axis cs:-4.90442365758559,47600);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-4.90442365758559,0) rectangle (axis cs:-3.44718888226677,34300);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-3.44718888226677,0) rectangle (axis cs:-1.98995410694796,7106);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-1.98995410694796,0) rectangle (axis cs:-0.532719331629137,1695);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:-0.532719331629137,0) rectangle (axis cs:0.924515443689682,1776);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:0.924515443689682,0) rectangle (axis cs:2.3817502190085,0);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:2.3817502190085,0) rectangle (axis cs:3.83898499432732,544);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:3.83898499432732,0) rectangle (axis cs:5.29621976964614,0);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:5.29621976964614,0) rectangle (axis cs:6.75345454496496,0);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:6.75345454496496,0) rectangle (axis cs:8.21068932028378,0);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:8.21068932028378,0) rectangle (axis cs:9.66792409560259,15);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:9.66792409560259,0) rectangle (axis cs:11.1251588709214,65);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.75] (axis cs:11.1251588709214,0) rectangle (axis cs:12.5823936462402,1);
+\end{axis}
+
+\end{tikzpicture}
