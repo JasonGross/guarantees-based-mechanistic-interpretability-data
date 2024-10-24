@@ -1,0 +1,184 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+
+\begin{groupplot}[group style={group size=3 by 1}]
+\nextgroupplot[
+tick align=outside,
+tick pos=left,
+title={\(\displaystyle U\)},
+x grid style={darkgray176},
+xmin=-0.5, xmax=63.5,
+xtick style={color=black},
+xtick={-10,0,10,20,30,40,50,60,70},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}10}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {60}\),
+  \(\displaystyle {70}\)
+},
+y dir=reverse,
+y grid style={darkgray176},
+ymin=0, ymax=64,
+ytick style={color=black},
+ytick={0,10,20,30,40,50,60},
+yticklabels={
+  \(\displaystyle {0}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {60}\)
+}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-0.5, xmax=63.5, ymin=63.5, ymax=-0.5] {11130-EQKE-err-svd-000.png};
+
+\nextgroupplot[
+tick align=outside,
+tick pos=left,
+title={Singular Values for EQKE\_err},
+x grid style={darkgray176},
+xmin=-3.15, xmax=66.15,
+xtick style={color=black},
+xtick={-10,0,10,20,30,40,50,60,70},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}10}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {60}\),
+  \(\displaystyle {70}\)
+},
+y grid style={darkgray176},
+ymin=0, ymax=8.59139054177074,
+ytick style={color=black},
+ytick={0,1,2,3,4,5,6,7,8,9},
+yticklabels={
+  \(\displaystyle {0}\),
+  \(\displaystyle {1}\),
+  \(\displaystyle {2}\),
+  \(\displaystyle {3}\),
+  \(\displaystyle {4}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {6}\),
+  \(\displaystyle {7}\),
+  \(\displaystyle {8}\),
+  \(\displaystyle {9}\)
+}
+]
+\addplot [semithick, blue, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\] {%
+0 8.18227672576904\\
+1 4.27298974990845\\
+2 3.77579855918884\\
+3 2.83671975135803\\
+4 2.72603607177734\\
+5 2.31092405319214\\
+6 1.76164150238037\\
+7 1.639284491539\\
+8 1.49024665355682\\
+9 1.2818763256073\\
+10 1.00279998779297\\
+11 0.885483503341675\\
+12 0.691268503665924\\
+13 0.620955467224121\\
+14 0.545692920684814\\
+15 0.517730057239532\\
+16 0.421562045812607\\
+17 0.313856571912766\\
+18 0.289588004350662\\
+19 0.22735670208931\\
+20 0.176031291484833\\
+21 0.109973043203354\\
+22 0.103001363575459\\
+23 0.0832250118255615\\
+24 0.0681910365819931\\
+25 0.0407461673021317\\
+26 0.0312113799154758\\
+27 0.0214077476412058\\
+28 0.0102260680869222\\
+29 0.00514616211876273\\
+30 8.56678411764733e-07\\
+31 4.05735192998691e-07\\
+32 4.05735192998691e-07\\
+33 4.05735192998691e-07\\
+34 4.05735192998691e-07\\
+35 4.05735192998691e-07\\
+36 4.05735192998691e-07\\
+37 4.05735192998691e-07\\
+38 4.05735192998691e-07\\
+39 4.05735192998691e-07\\
+40 4.05735192998691e-07\\
+41 4.05735192998691e-07\\
+42 4.05735192998691e-07\\
+43 4.05735192998691e-07\\
+44 4.05735192998691e-07\\
+45 4.05735192998691e-07\\
+46 4.05735192998691e-07\\
+47 4.05735192998691e-07\\
+48 4.05735192998691e-07\\
+49 4.05735192998691e-07\\
+50 4.05735192998691e-07\\
+51 4.05735192998691e-07\\
+52 4.05735192998691e-07\\
+53 4.05735192998691e-07\\
+54 4.05735192998691e-07\\
+55 4.05735192998691e-07\\
+56 4.05735192998691e-07\\
+57 4.05735192998691e-07\\
+58 4.05735192998691e-07\\
+59 4.05735192998691e-07\\
+60 4.05735192998691e-07\\
+61 4.05735192998691e-07\\
+62 4.05735192998691e-07\\
+63 4.05735192998691e-07\\
+};
+
+\nextgroupplot[
+tick align=outside,
+tick pos=left,
+title={\(\displaystyle V\)},
+x grid style={darkgray176},
+xmin=-0.5, xmax=63.5,
+xtick style={color=black},
+xtick={-10,0,10,20,30,40,50,60,70},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}10}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {60}\),
+  \(\displaystyle {70}\)
+},
+y dir=reverse,
+y grid style={darkgray176},
+ymin=0, ymax=64,
+ytick style={color=black},
+ytick={0,10,20,30,40,50,60},
+yticklabels={
+  \(\displaystyle {0}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {60}\)
+}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-0.5, xmax=63.5, ymin=63.5, ymax=-0.5] {11130-EQKE-err-svd-001.png};
+\end{groupplot}
+
+\end{tikzpicture}
