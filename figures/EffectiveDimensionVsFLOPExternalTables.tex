@@ -1,4 +1,4 @@
-% This file was created with tikzplotlib v0.10.1.post5.
+% This file was created with tikzplotlib v0.10.1.post9.
 \begin{tikzpicture}
 
 \definecolor{crimson2272628}{RGB}{227,26,28}
@@ -20,7 +20,8 @@ legend style={
   text opacity=1,
   at={(0.03,0.97)},
   anchor=north west,
-  draw=lightgray204
+  draw=lightgray204,
+  mark options={mark size=3}
 },
 log basis x={2},
 log basis y={2},
@@ -69,7 +70,7 @@ yticklabels={
 ]
 \addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=3pt, mark=*, only marks]
 table{EffectiveDimensionVsFLOPExternalTables-000.dat};
-\addlegendentry{brute force}
+\addlegendentry{importance sampling}
 \addplot [draw=steelblue31120180, fill=steelblue31120180, mark size=3pt, mark=*, only marks]
 table{EffectiveDimensionVsFLOPExternalTables-001.dat};
 \addlegendentry{cubic}

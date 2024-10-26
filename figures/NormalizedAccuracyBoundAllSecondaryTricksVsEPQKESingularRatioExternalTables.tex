@@ -1,4 +1,4 @@
-% This file was created with tikzplotlib v0.10.1.post5.
+% This file was created with tikzplotlib v0.10.1.post9.
 \begin{tikzpicture}
 
 \definecolor{crimson2272628}{RGB}{227,26,28}
@@ -21,23 +21,27 @@ legend style={
   text opacity=1,
   at={(0.5,0.91)},
   anchor=north,
-  draw=lightgray204
+  draw=lightgray204,
+  mark options={mark size=3}
 },
 tick align=outside,
 tick pos=left,
 x grid style={darkgray176},
 xlabel={EPQKE Singular Ratio: \(\displaystyle \sigma_1 / \sigma_2\)},
-xmin=492.402069091797, xmax=1412.62954711914,
+xmin=357.824690246582, xmax=1804.304246521,
 xtick style={color=black},
-xtick={400,600,800,1000,1200,1400,1600},
+xtick={200,400,600,800,1000,1200,1400,1600,1800,2000},
 xticklabels={
+  \(\displaystyle {200}\),
   \(\displaystyle {400}\),
   \(\displaystyle {600}\),
   \(\displaystyle {800}\),
   \(\displaystyle {1000}\),
   \(\displaystyle {1200}\),
   \(\displaystyle {1400}\),
-  \(\displaystyle {1600}\)
+  \(\displaystyle {1600}\),
+  \(\displaystyle {1800}\),
+  \(\displaystyle {2000}\)
 },
 y grid style={darkgray176},
 ylabel={Normalized Accuracy Bound},
@@ -58,7 +62,7 @@ table{NormalizedAccuracyBoundAllSecondaryTricksVsEPQKESingularRatioExternalTable
 \addlegendentry{max-diff-exact}
 \addplot [draw=khaki255255153, fill=khaki255255153, mark size=3pt, mark=*, only marks]
 table{NormalizedAccuracyBoundAllSecondaryTricksVsEPQKESingularRatioExternalTables-001.dat};
-\addlegendentry{mean+max-diff-subproduct}
+\addlegendentry{max-diff-subproduct}
 \addplot [
   draw=darkslateblue10661154,
   fill=darkslateblue10661154,
@@ -67,13 +71,13 @@ table{NormalizedAccuracyBoundAllSecondaryTricksVsEPQKESingularRatioExternalTable
   only marks
 ]
 table{NormalizedAccuracyBoundAllSecondaryTricksVsEPQKESingularRatioExternalTables-002.dat};
-\addlegendentry{max-diff-subproduct}
+\addlegendentry{mean+max-diff-subproduct}
 \addplot [draw=thistle202178214, fill=thistle202178214, mark size=3pt, mark=*, only marks]
 table{NormalizedAccuracyBoundAllSecondaryTricksVsEPQKESingularRatioExternalTables-003.dat};
-\addlegendentry{max-diff}
+\addlegendentry{mean+max-diff}
 \addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=3pt, mark=*, only marks]
 table{NormalizedAccuracyBoundAllSecondaryTricksVsEPQKESingularRatioExternalTables-004.dat};
-\addlegendentry{mean+max-diff}
+\addlegendentry{max-diff}
 \addplot [draw=sandybrown253191111, fill=sandybrown253191111, mark size=3pt, mark=*, only marks]
 table{NormalizedAccuracyBoundAllSecondaryTricksVsEPQKESingularRatioExternalTables-005.dat};
 \addlegendentry{svd}
