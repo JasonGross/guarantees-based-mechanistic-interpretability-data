@@ -1,0 +1,243 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{crimson2272628}{RGB}{227,26,28}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange2551270}{RGB}{255,127,0}
+\definecolor{forestgreen5116044}{RGB}{51,160,44}
+\definecolor{lightblue166206227}{RGB}{166,206,227}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{lightgreen178223138}{RGB}{178,223,138}
+\definecolor{lightsalmon251154153}{RGB}{251,154,153}
+\definecolor{sandybrown253191111}{RGB}{253,191,111}
+\definecolor{steelblue31120180}{RGB}{31,120,180}
+
+\begin{groupplot}[group style={group size=2 by 2}]
+\nextgroupplot[
+log basis x={2},
+log basis y={2},
+tick align=outside,
+x grid style={darkgray176},
+xmin=275002.361326981, xmax=47509798810.0914,
+xmode=log,
+xtick pos=right,
+xtick style={color=black},
+xtick={512,262144,134217728,68719476736,35184372088832},
+xticklabels={
+  \(\displaystyle {2^{9}}\),
+  \(\displaystyle {2^{18}}\),
+  \(\displaystyle {2^{27}}\),
+  \(\displaystyle {2^{36}}\),
+  \(\displaystyle {2^{45}}\)
+},
+y grid style={darkgray176},
+ymin=1094.77673283642, ymax=58183.4798726194,
+ymode=log,
+ytick pos=left,
+ytick style={color=black},
+ytick={512,1024,2048,4096,8192,16384,32768,65536,131072},
+yticklabels={
+  \(\displaystyle {2^{9}}\),
+  \(\displaystyle {2^{10}}\),
+  \(\displaystyle {2^{11}}\),
+  \(\displaystyle {2^{12}}\),
+  \(\displaystyle {2^{13}}\),
+  \(\displaystyle {2^{14}}\),
+  \(\displaystyle {2^{15}}\),
+  \(\displaystyle {2^{16}}\),
+  \(\displaystyle {2^{17}}\)
+}
+]
+\addplot [draw=lightblue166206227, draw=none, fill=lightblue166206227, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-000.dat};
+\addplot [draw=none, draw=steelblue31120180, fill=steelblue31120180, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-001.dat};
+\addplot [draw=lightgreen178223138, draw=none, fill=lightgreen178223138, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-002.dat};
+\addplot [draw=forestgreen5116044, draw=none, fill=forestgreen5116044, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-003.dat};
+\addplot [draw=lightsalmon251154153, draw=none, fill=lightsalmon251154153, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-004.dat};
+\addplot [draw=crimson2272628, draw=none, fill=crimson2272628, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-005.dat};
+\addplot [draw=none, draw=sandybrown253191111, fill=sandybrown253191111, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-006.dat};
+\addplot [draw=darkorange2551270, draw=none, fill=darkorange2551270, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-007.dat};
+
+\nextgroupplot[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.97,0.03)},
+  anchor=south east,
+  draw=lightgray204,
+  mark options={mark size=3}
+},
+log basis x={2},
+log basis y={2},
+tick align=outside,
+tick pos=right,
+x grid style={darkgray176},
+xmin=7.32027407388437e+43, xmax=1.1712438518215e+45,
+xmode=log,
+xtick style={color=black},
+xtick={1.11503725992653e+43,4.46014903970612e+43,1.78405961588245e+44,7.1362384635298e+44,2.85449538541192e+45,1.14179815416477e+46},
+xticklabels={
+  \(\displaystyle {2^{143}}\),
+  \(\displaystyle {2^{145}}\),
+  \(\displaystyle {2^{147}}\),
+  \(\displaystyle {2^{149}}\),
+  \(\displaystyle {2^{151}}\),
+  \(\displaystyle {2^{153}}\)
+},
+y grid style={darkgray176},
+ymin=1094.77673283642, ymax=58183.4798726194,
+ymode=log,
+ytick style={color=black},
+ytick={512,1024,2048,4096,8192,16384,32768,65536,131072},
+yticklabel style={anchor=west},
+yticklabels={
+  \(\displaystyle {2^{9}}\),
+  \(\displaystyle {2^{10}}\),
+  \(\displaystyle {2^{11}}\),
+  \(\displaystyle {2^{12}}\),
+  \(\displaystyle {2^{13}}\),
+  \(\displaystyle {2^{14}}\),
+  \(\displaystyle {2^{15}}\),
+  \(\displaystyle {2^{16}}\),
+  \(\displaystyle {2^{17}}\)
+}
+]
+\addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-008.dat};
+\addlegendentry{importance sampling}
+\addplot [draw=none, draw=steelblue31120180, fill=steelblue31120180, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-009.dat};
+\addlegendentry{cubic}
+\addplot [draw=lightgreen178223138, draw=none, fill=lightgreen178223138, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-010.dat};
+\addlegendentry{subcubic}
+\addplot [draw=forestgreen5116044, draw=none, fill=forestgreen5116044, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-011.dat};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\)}
+\addplot [draw=lightsalmon251154153, draw=none, fill=lightsalmon251154153, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-012.dat};
+\addlegendentry{direct-quadratic}
+\addplot [draw=crimson2272628, draw=none, fill=crimson2272628, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-013.dat};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic}
+\addplot [draw=none, draw=sandybrown253191111, fill=sandybrown253191111, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-014.dat};
+\addlegendentry{attention-quadratic}
+\addplot [draw=darkorange2551270, draw=none, fill=darkorange2551270, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-015.dat};
+\addlegendentry{attention-quadratic, direct-quadratic}
+
+\nextgroupplot[
+log basis x={2},
+log basis y={2},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xmin=275002.361326981, xmax=47509798810.0914,
+xmode=log,
+xtick style={color=black},
+xtick={512,262144,134217728,68719476736,35184372088832},
+xticklabels={
+  \(\displaystyle {2^{9}}\),
+  \(\displaystyle {2^{18}}\),
+  \(\displaystyle {2^{27}}\),
+  \(\displaystyle {2^{36}}\),
+  \(\displaystyle {2^{45}}\)
+},
+y grid style={darkgray176},
+ylabel={Unexplained Dimension (Estimated)},
+ymin=2.12676479325587e+37, ymax=3.40282366920938e+38,
+ymode=log,
+ytick style={color=black},
+ytick={1.06338239662793e+37,2.12676479325587e+37,4.25352958651173e+37,8.50705917302346e+37,1.70141183460469e+38,3.40282366920938e+38,6.80564733841877e+38},
+yticklabels={
+  \(\displaystyle {2^{123}}\),
+  \(\displaystyle {2^{124}}\),
+  \(\displaystyle {2^{125}}\),
+  \(\displaystyle {2^{126}}\),
+  \(\displaystyle {2^{127}}\),
+  \(\displaystyle {2^{128}}\),
+  \(\displaystyle {2^{129}}\)
+}
+]
+\addplot [draw=lightblue166206227, draw=none, fill=lightblue166206227, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-016.dat};
+\addplot [draw=steelblue31120180, fill=steelblue31120180, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-017.dat};
+\addplot [draw=lightgreen178223138, fill=lightgreen178223138, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-018.dat};
+\addplot [draw=forestgreen5116044, fill=forestgreen5116044, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-019.dat};
+\addplot [draw=lightsalmon251154153, fill=lightsalmon251154153, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-020.dat};
+\addplot [draw=crimson2272628, fill=crimson2272628, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-021.dat};
+\addplot [draw=sandybrown253191111, fill=sandybrown253191111, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-022.dat};
+\addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-023.dat};
+
+\nextgroupplot[
+log basis x={2},
+log basis y={2},
+tick align=outside,
+x grid style={darkgray176},
+xlabel={FLOPs to Verify Proof (approximate)},
+xmin=7.32027407388437e+43, xmax=1.1712438518215e+45,
+xmode=log,
+xtick pos=left,
+xtick style={color=black},
+xtick={1.11503725992653e+43,4.46014903970612e+43,1.78405961588245e+44,7.1362384635298e+44,2.85449538541192e+45,1.14179815416477e+46},
+xticklabels={
+  \(\displaystyle {2^{143}}\),
+  \(\displaystyle {2^{145}}\),
+  \(\displaystyle {2^{147}}\),
+  \(\displaystyle {2^{149}}\),
+  \(\displaystyle {2^{151}}\),
+  \(\displaystyle {2^{153}}\)
+},
+y grid style={darkgray176},
+ymin=2.12676479325587e+37, ymax=3.40282366920938e+38,
+ymode=log,
+ytick pos=right,
+ytick style={color=black},
+ytick={1.06338239662793e+37,2.12676479325587e+37,4.25352958651173e+37,8.50705917302346e+37,1.70141183460469e+38,3.40282366920938e+38,6.80564733841877e+38},
+yticklabel style={anchor=west},
+yticklabels={
+  \(\displaystyle {2^{123}}\),
+  \(\displaystyle {2^{124}}\),
+  \(\displaystyle {2^{125}}\),
+  \(\displaystyle {2^{126}}\),
+  \(\displaystyle {2^{127}}\),
+  \(\displaystyle {2^{128}}\),
+  \(\displaystyle {2^{129}}\)
+}
+]
+\addplot [draw=lightblue166206227, draw=none, fill=lightblue166206227, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-024.dat};
+\addplot [draw=none, draw=steelblue31120180, fill=steelblue31120180, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-025.dat};
+\addplot [draw=lightgreen178223138, draw=none, fill=lightgreen178223138, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-026.dat};
+\addplot [draw=forestgreen5116044, draw=none, fill=forestgreen5116044, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-027.dat};
+\addplot [draw=lightsalmon251154153, draw=none, fill=lightsalmon251154153, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-028.dat};
+\addplot [draw=crimson2272628, draw=none, fill=crimson2272628, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-029.dat};
+\addplot [draw=none, draw=sandybrown253191111, fill=sandybrown253191111, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-030.dat};
+\addplot [draw=darkorange2551270, draw=none, fill=darkorange2551270, mark=*]
+table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-031.dat};
+\end{groupplot}
+
+\end{tikzpicture}
