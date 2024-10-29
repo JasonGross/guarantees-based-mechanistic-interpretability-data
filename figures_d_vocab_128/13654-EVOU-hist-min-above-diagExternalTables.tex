@@ -1,0 +1,53 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={\(\displaystyle \mathrm{EVOU} := \WE \WV \WO\WU \)\\
+\(\displaystyle (\mathrm{EVOU} - \mathrm{EVOU}\mathrm{.diag}()[:,\mathrm{None}])\mathrm{.max}(\mathrm{dim}=-1)\) (excluding diagonal)\\
+\(\displaystyle \bar{x}\pm\sigma\): \(\displaystyle 1 \pm 71\); range: \(\displaystyle 2 \pm 13\)},
+x grid style={darkgray176},
+xlabel={logit - diag},
+xmin=-12.4822784900665, xmax=16.3120638370514,
+xtick style={color=black},
+xtick={-15,-10,-5,0,5,10,15,20},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}15}\),
+  \(\displaystyle {\ensuremath{-}10}\),
+  \(\displaystyle {\ensuremath{-}5}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\),
+  \(\displaystyle {20}\)
+},
+y grid style={darkgray176},
+ylabel={count},
+ymin=0, ymax=28.35,
+ytick style={color=black},
+ytick={0,5,10,15,20,25,30},
+yticklabels={
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {25}\),
+  \(\displaystyle {30}\)
+}
+]
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:-11.1734447479248,0) rectangle (axis cs:-7.9013603925705,23);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:-7.9013603925705,0) rectangle (axis cs:-4.62927603721619,26);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:-4.62927603721619,0) rectangle (axis cs:-1.35719168186188,13);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:-1.35719168186188,0) rectangle (axis cs:1.91489267349243,8);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:1.91489267349243,0) rectangle (axis cs:5.18697702884674,5);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:5.18697702884674,0) rectangle (axis cs:8.45906138420105,13);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:8.45906138420105,0) rectangle (axis cs:11.7311457395554,27);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:11.7311457395554,0) rectangle (axis cs:15.0032300949097,13);
+\end{axis}
+
+\end{tikzpicture}
