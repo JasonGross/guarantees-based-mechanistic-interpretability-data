@@ -1,0 +1,43 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={token gap},
+xmin=-139.7, xmax=139.7,
+xtick style={color=black},
+xtick={-150,-100,-50,0,50,100,150},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}150}\),
+  \(\displaystyle {\ensuremath{-}100}\),
+  \(\displaystyle {\ensuremath{-}50}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {100}\),
+  \(\displaystyle {150}\)
+},
+y grid style={darkgray176},
+ylabel={attention difference},
+ymin=-135.024739837646, ymax=135.024739837646,
+ytick style={color=black},
+ytick={-150,-100,-50,0,50,100,150},
+yticklabels={
+  \(\displaystyle {\ensuremath{-}150}\),
+  \(\displaystyle {\ensuremath{-}100}\),
+  \(\displaystyle {\ensuremath{-}50}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {100}\),
+  \(\displaystyle {150}\)
+}
+]
+\addplot [draw=white, fill=steelblue31119180, mark size=3pt, mark=*, only marks]
+table{27484-EQKE-scatter-attention-difference-vs-gapExternalTables-000.dat};
+\end{axis}
+
+\end{tikzpicture}
