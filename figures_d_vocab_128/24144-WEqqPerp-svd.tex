@@ -1,0 +1,152 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+
+\begin{groupplot}[group style={group size=3 by 1}]
+\nextgroupplot[
+tick align=outside,
+tick pos=left,
+title={\(\displaystyle U\)},
+x grid style={darkgray176},
+xmin=-0.5, xmax=31.5,
+xtick style={color=black},
+xtick={-5,0,5,10,15,20,25,30,35},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}5}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {25}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {35}\)
+},
+y dir=reverse,
+y grid style={darkgray176},
+ymin=0, ymax=128,
+ytick style={color=black},
+ytick={0,20,40,60,80,100,120},
+yticklabels={
+  \(\displaystyle {0}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {60}\),
+  \(\displaystyle {80}\),
+  \(\displaystyle {100}\),
+  \(\displaystyle {120}\)
+}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-0.5, xmax=31.5, ymin=127.5, ymax=-0.5] {24144-WEqqPerp-svd-000.png};
+
+\nextgroupplot[
+tick align=outside,
+tick pos=left,
+title={Singular Values for \(\displaystyle E_{q,2}^{\perp}\)},
+x grid style={darkgray176},
+xmin=-1.55, xmax=32.55,
+xtick style={color=black},
+xtick={-5,0,5,10,15,20,25,30,35},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}5}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {25}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {35}\)
+},
+y grid style={darkgray176},
+ymin=0, ymax=4.49924676850248,
+ytick style={color=black},
+ytick={0,0.5,1,1.5,2,2.5,3,3.5,4,4.5},
+yticklabels={
+  \(\displaystyle {0.0}\),
+  \(\displaystyle {0.5}\),
+  \(\displaystyle {1.0}\),
+  \(\displaystyle {1.5}\),
+  \(\displaystyle {2.0}\),
+  \(\displaystyle {2.5}\),
+  \(\displaystyle {3.0}\),
+  \(\displaystyle {3.5}\),
+  \(\displaystyle {4.0}\),
+  \(\displaystyle {4.5}\)
+}
+]
+\addplot [semithick, blue, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\] {%
+0 4.28499698638916\\
+1 3.78814673423767\\
+2 3.73415851593018\\
+3 3.56663155555725\\
+4 3.09733438491821\\
+5 2.8917875289917\\
+6 2.46151280403137\\
+7 2.30571675300598\\
+8 2.01242232322693\\
+9 1.97891914844513\\
+10 1.90063381195068\\
+11 1.81075465679169\\
+12 1.75529372692108\\
+13 1.73481500148773\\
+14 1.68421840667725\\
+15 1.57872521877289\\
+16 1.53963029384613\\
+17 1.50708651542664\\
+18 1.48734962940216\\
+19 1.44065964221954\\
+20 1.35300707817078\\
+21 1.31506371498108\\
+22 1.30055439472198\\
+23 1.25622379779816\\
+24 1.20506310462952\\
+25 1.19381976127625\\
+26 1.09230124950409\\
+27 1.04775357246399\\
+28 1.00517201423645\\
+29 0.950769126415253\\
+30 2.84718998955213e-06\\
+31 1.34412277930096e-06\\
+};
+
+\nextgroupplot[
+tick align=outside,
+tick pos=left,
+title={\(\displaystyle V\)},
+x grid style={darkgray176},
+xmin=-0.5, xmax=31.5,
+xtick style={color=black},
+xtick={-5,0,5,10,15,20,25,30,35},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}5}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {25}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {35}\)
+},
+y dir=reverse,
+y grid style={darkgray176},
+ymin=0, ymax=32,
+ytick style={color=black},
+ytick={0,5,10,15,20,25,30},
+yticklabels={
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {25}\),
+  \(\displaystyle {30}\)
+}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-0.5, xmax=31.5, ymin=31.5, ymax=-0.5] {24144-WEqqPerp-svd-001.png};
+\end{groupplot}
+
+\end{tikzpicture}
