@@ -12,7 +12,7 @@
 \definecolor{sandybrown253191111}{RGB}{253,191,111}
 \definecolor{steelblue31120180}{RGB}{31,120,180}
 
-\begin{axis}[
+\begin{axis}[legend pos=outer north east,
 legend cell align={left},
 legend style={
   fill opacity=0.8,
@@ -57,28 +57,28 @@ yticklabels={
 }
 ]
 \addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-000.dat};
-\addlegendentry{importance sampling (acc: 0.9990 ± 0.0018)}
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-000-adjusted-2.dat};
+\addlegendentry{brute force (estimated) (acc: 0.9990 ± 0.0018)}
 \addplot [draw=steelblue31120180, fill=steelblue31120180, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-001.dat};
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-001-adjusted-2.dat};
 \addlegendentry{cubic (rel acc: 0.942 ± 0.010)}
 \addplot [draw=lightgreen178223138, fill=lightgreen178223138, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-002.dat};
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-002-adjusted-2.dat};
 \addlegendentry{subcubic (rel acc: 0.806 ± 0.013)}
 \addplot [draw=forestgreen5116044, fill=forestgreen5116044, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-003.dat};
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-003-adjusted-2.dat};
 \addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\) (rel acc: 0.785 ± 0.014)}
 \addplot [draw=lightsalmon251154153, fill=lightsalmon251154153, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-004.dat};
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-004-adjusted-2.dat};
 \addlegendentry{direct-quadratic (rel acc: 0.666 ± 0.053)}
 \addplot [draw=crimson2272628, fill=crimson2272628, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-005.dat};
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-005-adjusted-2.dat};
 \addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic (rel acc: 0.645 ± 0.052)}
 \addplot [draw=sandybrown253191111, fill=sandybrown253191111, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-006.dat};
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-006-adjusted-2.dat};
 \addlegendentry{attention-quadratic (rel acc: 0.423 ± 0.029)}
 \addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=3pt, mark=*, only marks]
-table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-007.dat};
+table{NormalizedAccuracyBoundVsFLOPsFrontierOnlyExternalTables-007-adjusted-2.dat};
 \addlegendentry{attention-quadratic, direct-quadratic (rel acc: 0.340 ± 0.032)}
 \end{axis}
 
