@@ -1,0 +1,49 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={token gap},
+xmin=-69.3, xmax=69.3,
+xtick style={color=black},
+xtick={-80,-60,-40,-20,0,20,40,60,80},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}80}\),
+  \(\displaystyle {\ensuremath{-}60}\),
+  \(\displaystyle {\ensuremath{-}40}\),
+  \(\displaystyle {\ensuremath{-}20}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {60}\),
+  \(\displaystyle {80}\)
+},
+y grid style={darkgray176},
+ylabel={attention difference},
+ymin=-107.070127105713, ymax=107.070127105713,
+ytick style={color=black},
+ytick={-125,-100,-75,-50,-25,0,25,50,75,100,125},
+yticklabels={
+  \(\displaystyle {\ensuremath{-}125}\),
+  \(\displaystyle {\ensuremath{-}100}\),
+  \(\displaystyle {\ensuremath{-}75}\),
+  \(\displaystyle {\ensuremath{-}50}\),
+  \(\displaystyle {\ensuremath{-}25}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {25}\),
+  \(\displaystyle {50}\),
+  \(\displaystyle {75}\),
+  \(\displaystyle {100}\),
+  \(\displaystyle {125}\)
+}
+]
+\addplot [draw=white, fill=steelblue31119180, mark size=3pt, mark=*, only marks]
+table{2773-EQKE-scatter-attention-difference-vs-gapExternalTables-000.dat};
+\end{axis}
+
+\end{tikzpicture}
