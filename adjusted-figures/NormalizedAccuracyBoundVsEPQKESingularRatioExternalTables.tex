@@ -1,0 +1,91 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{crimson2272628}{RGB}{227,26,28}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange2551270}{RGB}{255,127,0}
+\definecolor{darkslateblue10661154}{RGB}{106,61,154}
+\definecolor{forestgreen5116044}{RGB}{51,160,44}
+\definecolor{khaki255255153}{RGB}{255,255,153}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{lightsalmon251154153}{RGB}{251,154,153}
+\definecolor{sandybrown253191111}{RGB}{253,191,111}
+\definecolor{sienna1778940}{RGB}{177,89,40}
+\definecolor{thistle202178214}{RGB}{202,178,214}
+
+\begin{axis}[legend pos=outer north east,
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+%
+  legend pos=outer north east,
+  draw=lightgray204,
+  mark options={mark size=3}
+},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={EPQKE Singular Ratio: \(\displaystyle \sigma_1 / \sigma_2\)},
+xmin=297.064666748047, xmax=1097.51675415039,
+xtick style={color=black},
+xtick={200,400,600,800,1000,1200},
+xticklabels={
+  \(\displaystyle {200}\),
+  \(\displaystyle {400}\),
+  \(\displaystyle {600}\),
+  \(\displaystyle {800}\),
+  \(\displaystyle {1000}\),
+  \(\displaystyle {1200}\)
+},
+y grid style={darkgray176},
+ylabel={Normalized Accuracy Bound},
+ymin=0, ymax=1,
+ytick style={color=black},
+ytick={0,0.2,0.4,0.6,0.8,1},
+yticklabels={
+  \(\displaystyle {0.0}\),
+  \(\displaystyle {0.2}\),
+  \(\displaystyle {0.4}\),
+  \(\displaystyle {0.6}\),
+  \(\displaystyle {0.8}\),
+  \(\displaystyle {1.0}\)
+}
+]
+\addplot [draw=sienna1778940, fill=sienna1778940, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-000.dat};
+\addlegendentry{max-diff-exact}
+\addplot [draw=khaki255255153, fill=khaki255255153, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-001.dat};
+\addlegendentry{mean+max-diff-subproduct}
+\addplot [
+  draw=darkslateblue10661154,
+  fill=darkslateblue10661154,
+  mark size=3pt,
+  mark=*,
+  only marks
+]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-002.dat};
+\addlegendentry{max-diff-subproduct}
+\addplot [draw=thistle202178214, fill=thistle202178214, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-003.dat};
+\addlegendentry{max-diff}
+\addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-004.dat};
+\addlegendentry{mean+max-diff}
+\addplot [draw=sandybrown253191111, fill=sandybrown253191111, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-005.dat};
+\addlegendentry{svd}
+\addplot [draw=crimson2272628, fill=crimson2272628, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-006.dat};
+\addlegendentry{max-diff-subproduct-recursive}
+\addplot [draw=lightsalmon251154153, fill=lightsalmon251154153, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-007.dat};
+\addlegendentry{mean-recursive+max-diff-subproduct-recursive}
+\addplot [draw=forestgreen5116044, fill=forestgreen5116044, mark size=3pt, mark=*, only marks]
+table{NormalizedAccuracyBoundVsEPQKESingularRatioExternalTables-008.dat};
+\addlegendentry{mean+max-diff-subproduct-recursive}
+\end{axis}
+
+\end{tikzpicture}
