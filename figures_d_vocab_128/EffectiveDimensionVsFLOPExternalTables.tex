@@ -1,0 +1,97 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{crimson2272628}{RGB}{227,26,28}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange2551270}{RGB}{255,127,0}
+\definecolor{forestgreen5116044}{RGB}{51,160,44}
+\definecolor{lightblue166206227}{RGB}{166,206,227}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{lightgreen178223138}{RGB}{178,223,138}
+\definecolor{lightsalmon251154153}{RGB}{251,154,153}
+\definecolor{sandybrown253191111}{RGB}{253,191,111}
+\definecolor{steelblue31120180}{RGB}{31,120,180}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=lightgray204,
+  mark options={mark size=3}
+},
+log basis x={2},
+log basis y={2},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={FLOPs to Verify Proof (approximate)},
+xmin=1722224.47948847, xmax=7.64185592528163e+29,
+xmode=log,
+xtick style={color=black},
+xtick={2048,1048576,536870912,274877906944,140737488355328,7.20575940379279e+16,3.68934881474191e+19,1.88894659314786e+22,9.67140655691703e+24,4.95176015714152e+27,2.53530120045646e+30,1.29807421463371e+33},
+xticklabels={
+  \(\displaystyle {2^{11}}\),
+  \(\displaystyle {2^{20}}\),
+  \(\displaystyle {2^{29}}\),
+  \(\displaystyle {2^{38}}\),
+  \(\displaystyle {2^{47}}\),
+  \(\displaystyle {2^{56}}\),
+  \(\displaystyle {2^{65}}\),
+  \(\displaystyle {2^{74}}\),
+  \(\displaystyle {2^{83}}\),
+  \(\displaystyle {2^{92}}\),
+  \(\displaystyle {2^{101}}\),
+  \(\displaystyle {2^{110}}\)
+},
+y grid style={darkgray176},
+ylabel={Unexplained Dimension (Estimated)},
+ymin=1891.4472436405, ymax=1.33982629327241e+24,
+ymode=log,
+ytick style={color=black},
+ytick={4,1024,262144,67108864,17179869184,4398046511104,1.12589990684262e+15,2.88230376151712e+17,7.37869762948382e+19,1.88894659314786e+22,4.83570327845852e+24,1.23794003928538e+27},
+yticklabels={
+  \(\displaystyle {2^{2}}\),
+  \(\displaystyle {2^{10}}\),
+  \(\displaystyle {2^{18}}\),
+  \(\displaystyle {2^{26}}\),
+  \(\displaystyle {2^{34}}\),
+  \(\displaystyle {2^{42}}\),
+  \(\displaystyle {2^{50}}\),
+  \(\displaystyle {2^{58}}\),
+  \(\displaystyle {2^{66}}\),
+  \(\displaystyle {2^{74}}\),
+  \(\displaystyle {2^{82}}\),
+  \(\displaystyle {2^{90}}\)
+}
+]
+\addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-000.dat};
+\addlegendentry{brute force (estimated)}
+\addplot [draw=steelblue31120180, fill=steelblue31120180, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-001.dat};
+\addlegendentry{cubic}
+\addplot [draw=lightgreen178223138, fill=lightgreen178223138, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-002.dat};
+\addlegendentry{subcubic}
+\addplot [draw=forestgreen5116044, fill=forestgreen5116044, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-003.dat};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\)}
+\addplot [draw=lightsalmon251154153, fill=lightsalmon251154153, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-004.dat};
+\addlegendentry{direct-quadratic}
+\addplot [draw=crimson2272628, fill=crimson2272628, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-005.dat};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic}
+\addplot [draw=sandybrown253191111, fill=sandybrown253191111, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-006.dat};
+\addlegendentry{attention-quadratic}
+\addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=3pt, mark=*, only marks]
+table{EffectiveDimensionVsFLOPExternalTables-007.dat};
+\addlegendentry{attention-quadratic, direct-quadratic}
+\end{axis}
+
+\end{tikzpicture}
