@@ -1,0 +1,217 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{crimson2272628}{RGB}{227,26,28}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange2551270}{RGB}{255,127,0}
+\definecolor{forestgreen5116044}{RGB}{51,160,44}
+\definecolor{lightblue166206227}{RGB}{166,206,227}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{lightgreen178223138}{RGB}{178,223,138}
+\definecolor{lightsalmon251154153}{RGB}{251,154,153}
+\definecolor{sandybrown253191111}{RGB}{253,191,111}
+\definecolor{steelblue31120180}{RGB}{31,120,180}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=lightgray204,
+  mark options={mark size=3}
+},
+log basis x={2},
+log basis y={2},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={FLOPs to Verify Proof (approximate)},
+xmin=238981.79588275, xmax=2.12780224126475e+46,
+xmode=log,
+xtick style={color=black},
+xtick={1,131072,17179869184,2.25179981368525e+15,2.95147905179353e+20,3.86856262276681e+25,5.07060240091292e+30,6.64613997892458e+35,8.71122859317602e+40,1.14179815416477e+46,1.49657767662684e+51,1.96159429230834e+56},
+xticklabels={
+  \(\displaystyle {2^{0}}\),
+  \(\displaystyle {2^{17}}\),
+  \(\displaystyle {2^{34}}\),
+  \(\displaystyle {2^{51}}\),
+  \(\displaystyle {2^{68}}\),
+  \(\displaystyle {2^{85}}\),
+  \(\displaystyle {2^{102}}\),
+  \(\displaystyle {2^{119}}\),
+  \(\displaystyle {2^{136}}\),
+  \(\displaystyle {2^{153}}\),
+  \(\displaystyle {2^{170}}\),
+  \(\displaystyle {2^{187}}\)
+},
+y grid style={darkgray176},
+ylabel={Unexplained Dimension (Estimated)},
+ymin=82.7163160831717, ymax=4.41210218012787e+39,
+ymode=log,
+ytick style={color=black},
+ytick={0.00390625,64,1048576,17179869184,281474976710656,4.61168601842739e+18,7.55578637259143e+22,1.23794003928538e+27,2.02824096036517e+31,3.32306998946229e+35,5.44451787073502e+39,8.92029807941225e+43},
+yticklabels={
+  \(\displaystyle {2^{-8}}\),
+  \(\displaystyle {2^{6}}\),
+  \(\displaystyle {2^{20}}\),
+  \(\displaystyle {2^{34}}\),
+  \(\displaystyle {2^{48}}\),
+  \(\displaystyle {2^{62}}\),
+  \(\displaystyle {2^{76}}\),
+  \(\displaystyle {2^{90}}\),
+  \(\displaystyle {2^{104}}\),
+  \(\displaystyle {2^{118}}\),
+  \(\displaystyle {2^{132}}\),
+  \(\displaystyle {2^{146}}\)
+}
+]
+\addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+2.92810962955378e+44 8.50705917302346e+37\\
+2.92810962955378e+44 8.50705917302346e+37\\
+};
+\addlegendentry{importance sampling}
+\addplot [draw=steelblue31120180, fill=steelblue31120180, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+752334304 14848\\
+752334304 14848\\
+};
+\addlegendentry{cubic}
+\addplot [draw=lightgreen178223138, fill=lightgreen178223138, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+17937687 8384\\
+17945942 8258\\
+18167511 8384\\
+18175766 8258\\
+19169048 4544\\
+19177303 4418\\
+19398872 4544\\
+19407127 4418\\
+};
+\addlegendentry{subcubic}
+\addplot [draw=forestgreen5116044, fill=forestgreen5116044, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+18154806 4480\\
+18163061 4354\\
+18179763 4544\\
+18188018 4418\\
+18384630 4480\\
+18392885 4354\\
+18409587 4544\\
+18417842 4418\\
+18913016 4480\\
+18921271 4354\\
+18921335 4544\\
+18929590 4418\\
+19142840 4480\\
+19151095 4354\\
+19151159 4544\\
+19159414 4418\\
+20119385 4416\\
+20127640 4290\\
+20349209 4416\\
+20357464 4290\\
+};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\)}
+\addplot [draw=lightsalmon251154153, fill=lightsalmon251154153, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+17679543 10370\\
+17681591 10306\\
+17681591 10370\\
+17909367 10370\\
+17911415 10306\\
+17911415 10370\\
+18910904 6530\\
+18912952 6466\\
+18912952 6530\\
+19140728 6530\\
+19142776 6466\\
+19142776 6530\\
+};
+\addlegendentry{direct-quadratic}
+\addplot [draw=crimson2272628, fill=crimson2272628, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+17896662 6466\\
+17898710 6402\\
+17898710 6466\\
+17921619 6530\\
+17923667 6466\\
+17923667 6530\\
+18126486 6466\\
+18128534 6402\\
+18128534 6466\\
+18151443 6530\\
+18153491 6466\\
+18153491 6530\\
+18654872 6466\\
+18656920 6402\\
+18656920 6466\\
+18663191 6530\\
+18665239 6466\\
+18665239 6530\\
+18884696 6466\\
+18886744 6402\\
+18886744 6466\\
+18893015 6530\\
+18895063 6466\\
+18895063 6530\\
+19861241 6402\\
+19863289 6338\\
+19863289 6402\\
+20091065 6402\\
+20093113 6338\\
+20093113 6402\\
+};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic}
+\addplot [draw=sandybrown253191111, fill=sandybrown253191111, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+17624502 4480\\
+17632757 4354\\
+17636789 4544\\
+17645044 4418\\
+17651219 4544\\
+17659474 4418\\
+17854326 4480\\
+17862581 4354\\
+17866613 4544\\
+17874868 4418\\
+17881043 4544\\
+17889298 4418\\
+};
+\addlegendentry{attention-quadratic}
+\addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=3pt, mark=*, only marks]
+table [row sep=\\]{%
+x  y\\
+17366358 6466\\
+17368406 6402\\
+17368406 6466\\
+17378645 6530\\
+17380693 6466\\
+17380693 6530\\
+17393075 6530\\
+17395123 6466\\
+17395123 6530\\
+17596182 6466\\
+17598230 6402\\
+17598230 6466\\
+17608469 6530\\
+17610517 6466\\
+17610517 6530\\
+17622899 6530\\
+17624947 6466\\
+17624947 6530\\
+};
+\addlegendentry{attention-quadratic, direct-quadratic}
+\end{axis}
+
+\end{tikzpicture}
