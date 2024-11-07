@@ -29,7 +29,7 @@ tick align=outside,
 tick pos=left,
 x grid style={darkgray176},
 xlabel={FLOPs to Verify Proof (approximate)},
-xmin=238981.79588275, xmax=2.12780224126475e+46,
+xmin=238972.548369894, xmax=2.12780616212076e+46,
 xmode=log,
 xtick style={color=black},
 xtick={1,131072,17179869184,2.25179981368525e+15,2.95147905179353e+20,3.86856262276681e+25,5.07060240091292e+30,6.64613997892458e+35,8.71122859317602e+40,1.14179815416477e+46,1.49657767662684e+51,1.96159429230834e+56},
@@ -70,7 +70,7 @@ yticklabels={
 ]
 \addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=3pt, mark=*, only marks]
 table{EffectiveDimensionVsFLOPExternalTables-000.dat};
-\addlegendentry{importance sampling}
+\addlegendentry{brute force (estimated)}
 \addplot [draw=steelblue31120180, fill=steelblue31120180, mark size=3pt, mark=*, only marks]
 table{EffectiveDimensionVsFLOPExternalTables-001.dat};
 \addlegendentry{cubic}
@@ -88,10 +88,10 @@ table{EffectiveDimensionVsFLOPExternalTables-005.dat};
 \addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic}
 \addplot [draw=sandybrown253191111, fill=sandybrown253191111, mark size=3pt, mark=*, only marks]
 table{EffectiveDimensionVsFLOPExternalTables-006.dat};
-\addlegendentry{attention-quadratic}
+\addlegendentry{attention-quadratic, direct-quadratic}
 \addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=3pt, mark=*, only marks]
 table{EffectiveDimensionVsFLOPExternalTables-007.dat};
-\addlegendentry{attention-quadratic, direct-quadratic}
+\addlegendentry{attention-quadratic}
 \end{axis}
 
 \end{tikzpicture}

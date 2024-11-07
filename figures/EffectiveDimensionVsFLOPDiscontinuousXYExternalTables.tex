@@ -18,7 +18,7 @@ log basis x={2},
 log basis y={2},
 tick align=outside,
 x grid style={darkgray176},
-xmin=275002.361326981, xmax=47509798810.0914,
+xmin=274981.079047636, xmax=47511724843.901,
 xmode=log,
 xtick pos=right,
 xtick style={color=black},
@@ -113,7 +113,7 @@ yticklabels={
 ]
 \addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=3pt, mark=*, only marks]
 table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-008.dat};
-\addlegendentry{importance sampling}
+\addlegendentry{brute force (estimated)}
 \addplot [draw=none, draw=steelblue31120180, fill=steelblue31120180, mark=*]
 table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-009.dat};
 \addlegendentry{cubic}
@@ -131,10 +131,10 @@ table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-013.dat};
 \addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic}
 \addplot [draw=none, draw=sandybrown253191111, fill=sandybrown253191111, mark=*]
 table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-014.dat};
-\addlegendentry{attention-quadratic}
+\addlegendentry{attention-quadratic, direct-quadratic}
 \addplot [draw=darkorange2551270, draw=none, fill=darkorange2551270, mark=*]
 table{EffectiveDimensionVsFLOPDiscontinuousXYExternalTables-015.dat};
-\addlegendentry{attention-quadratic, direct-quadratic}
+\addlegendentry{attention-quadratic}
 
 \nextgroupplot[
 log basis x={2},
@@ -142,7 +142,7 @@ log basis y={2},
 tick align=outside,
 tick pos=left,
 x grid style={darkgray176},
-xmin=275002.361326981, xmax=47509798810.0914,
+xmin=274981.079047636, xmax=47511724843.901,
 xmode=log,
 xtick style={color=black},
 xtick={512,262144,134217728,68719476736,35184372088832},

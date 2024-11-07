@@ -18,7 +18,7 @@ log basis x={2},
 tick align=outside,
 tick pos=left,
 x grid style={darkgray176},
-xmin=275002.361326981, xmax=47509798810.0914,
+xmin=274981.079047636, xmax=47511724843.901,
 xmode=log,
 xtick style={color=black},
 xtick={512,262144,134217728,68719476736,35184372088832},
@@ -127,28 +127,28 @@ yticklabels={
 ]
 \addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=0.375pt, mark=*, only marks]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-008.dat};
-\addlegendentry{importance sampling (acc: 0.995 ± 0.015)}
+\addlegendentry{brute force (estimated) (acc: 0.995 ± 0.015)}
 \addplot [draw=none, draw=steelblue31120180, fill=steelblue31120180, mark=*]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-009.dat};
 \addlegendentry{cubic (rel acc: 0.888 ± 0.036)}
 \addplot [draw=lightgreen178223138, draw=none, fill=lightgreen178223138, mark=*]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-010.dat};
-\addlegendentry{subcubic (rel acc: 0.602 ± 0.034)}
+\addlegendentry{subcubic (rel acc: 0.563 ± 0.041)}
 \addplot [draw=forestgreen5116044, draw=none, fill=forestgreen5116044, mark=*]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-011.dat};
-\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\) (rel acc: 0.586 ± 0.036)}
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\) (rel acc: 0.549 ± 0.041)}
 \addplot [draw=lightsalmon251154153, draw=none, fill=lightsalmon251154153, mark=*]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-012.dat};
-\addlegendentry{direct-quadratic (rel acc: 0.554 ± 0.039)}
+\addlegendentry{direct-quadratic (rel acc: 0.540 ± 0.040)}
 \addplot [draw=crimson2272628, draw=none, fill=crimson2272628, mark=*]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-013.dat};
-\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic (rel acc: 0.542 ± 0.038)}
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic (rel acc: 0.528 ± 0.039)}
 \addplot [draw=none, draw=sandybrown253191111, fill=sandybrown253191111, mark=*]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-014.dat};
-\addlegendentry{attention-quadratic (rel acc: 0.348 ± 0.035)}
+\addlegendentry{attention-quadratic, direct-quadratic (rel acc: 0.322 ± 0.034)}
 \addplot [draw=darkorange2551270, draw=none, fill=darkorange2551270, mark=*]
 table{NormalizedAccuracyBoundVsFLOPsDiscontinuousXExternalTables-015.dat};
-\addlegendentry{attention-quadratic, direct-quadratic (rel acc: 0.328 ± 0.034)}
+\addlegendentry{attention-quadratic (rel acc: 0.323 ± 0.035)}
 \end{groupplot}
 
 \end{tikzpicture}
