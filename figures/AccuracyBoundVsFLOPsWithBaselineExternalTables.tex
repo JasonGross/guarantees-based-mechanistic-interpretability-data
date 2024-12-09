@@ -1,0 +1,109 @@
+% This file was created with tikzplotlib v0.10.1.post9.
+\begin{tikzpicture}
+
+\definecolor{crimson2272628}{RGB}{227,26,28}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange2551270}{RGB}{255,127,0}
+\definecolor{forestgreen5116044}{RGB}{51,160,44}
+\definecolor{gold}{RGB}{255,215,0}
+\definecolor{lightblue166206227}{RGB}{166,206,227}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{lightgreen178223138}{RGB}{178,223,138}
+\definecolor{lightsalmon251154153}{RGB}{251,154,153}
+\definecolor{sandybrown253191111}{RGB}{253,191,111}
+\definecolor{steelblue31120180}{RGB}{31,120,180}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.03)},
+  anchor=south west,
+  draw=lightgray204,
+  mark options={mark size=0.375}
+},
+log basis x={2},
+tick align=outside,
+tick pos=left,
+unbounded coords=jump,
+x grid style={darkgray176},
+xlabel={FLOPs to Verify Proof (approximate)},
+xmin=609977.773318622, xmax=5.63211318585811e+26,
+xmode=log,
+xtick style={color=black},
+xtick={0.0625,524288,4398046511104,3.68934881474191e+19,3.09485009821345e+26,2.59614842926741e+33,2.17780714829401e+40},
+xticklabels={
+  \(\displaystyle {2^{-4}}\),
+  \(\displaystyle {2^{19}}\),
+  \(\displaystyle {2^{42}}\),
+  \(\displaystyle {2^{65}}\),
+  \(\displaystyle {2^{88}}\),
+  \(\displaystyle {2^{111}}\),
+  \(\displaystyle {2^{134}}\)
+},
+y grid style={darkgray176},
+ylabel={Accuracy Bound},
+ymin=-0.0499787099423462, ymax=1.04955290878927,
+ytick style={color=black},
+ytick={-0.2,0,0.2,0.4,0.6,0.8,1,1.2},
+yticklabels={
+  \(\displaystyle {\ensuremath{-}0.2}\),
+  \(\displaystyle {0.0}\),
+  \(\displaystyle {0.2}\),
+  \(\displaystyle {0.4}\),
+  \(\displaystyle {0.6}\),
+  \(\displaystyle {0.8}\),
+  \(\displaystyle {1.0}\),
+  \(\displaystyle {1.2}\)
+}
+]
+\addplot [draw=lightblue166206227, fill=lightblue166206227, mark size=0.375pt, mark=*, only marks]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-000.dat};
+\addlegendentry{brute force (estimated) (acc: 0.9988 ± 0.0013)}
+\addplot [draw=steelblue31120180, fill=steelblue31120180, mark size=0.375pt, mark=*, only marks]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-001.dat};
+\addlegendentry{cubic (rel acc: 0.915 ± 0.021)}
+\addplot [
+  draw=lightgreen178223138,
+  fill=lightgreen178223138,
+  mark size=0.375pt,
+  mark=*,
+  only marks
+]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-002.dat};
+\addlegendentry{subcubic (rel acc: 0.673 ± 0.030)}
+\addplot [draw=forestgreen5116044, fill=forestgreen5116044, mark size=0.375pt, mark=*, only marks]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-003.dat};
+\addlegendentry{direct-quadratic (rel acc: 0.640 ± 0.032)}
+\addplot [
+  draw=lightsalmon251154153,
+  fill=lightsalmon251154153,
+  mark size=0.375pt,
+  mark=*,
+  only marks
+]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-004.dat};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\) (rel acc: 0.658 ± 0.028)}
+\addplot [draw=crimson2272628, fill=crimson2272628, mark size=0.375pt, mark=*, only marks]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-005.dat};
+\addlegendentry{attention-\(\displaystyle \dvocab \dmodel ^2\), direct-quadratic (rel acc: 0.626 ± 0.031)}
+\addplot [
+  draw=sandybrown253191111,
+  fill=sandybrown253191111,
+  mark size=0.375pt,
+  mark=*,
+  only marks
+]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-006.dat};
+\addlegendentry{attention-quadratic (rel acc: 0.393 ± 0.030)}
+\addplot [draw=darkorange2551270, fill=darkorange2551270, mark size=0.375pt, mark=*, only marks]
+table{AccuracyBoundVsFLOPsWithBaselineExternalTables-007.dat};
+\addlegendentry{attention-quadratic, direct-quadratic (rel acc: 0.391 ± 0.028)}
+\addplot [semithick, gold, dashed]
+table {}{AccuracyBoundVsFLOPsWithBaselineExternalTables-008.dat};
+\addlegendentry{brute-force linear baseline}
+\end{axis}
+
+\end{tikzpicture}
